@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    width: .6rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #1c1e1f;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #1c1e1f;
+    border: 2px solid white;
+}
+
+.inicio{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/comic.png);
+}
+
+.header{
+    background-color: transparent;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 0.8rem;
+    padding-right: 6rem;
+}
+
+.header a{
+    margin-left: 5rem;
+    color: black;
+}
+
+.header a:hover{
+    transition: all .3s ease-out;
+    box-shadow:  0 -1px 0 0 black inset, 0 -2px 0 0 black inset ;
+}
+
+.header2{
+    background-color: #ff3b4b;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 0.8rem;
+    padding-right: 6rem;
+}
+
+.header2 a{
+    margin-left: 5rem;
+    color: white;
+}
+
+.header2 a:hover{
+    transition: all .3s ease-out;
+    box-shadow:  0 -1px 0 0 #1c1e1f inset, 0 -2px 0 0 #1c1e1f inset ;
+}
+
+.header3{
+    background-color: #feba29;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 0.8rem;
+    padding-right: 6rem;
+}
+
+.header3 a{
+    margin-left: 5rem;
+    color: white;
+}
+
+.header3 a:hover{
+    transition: all .3s ease-out;
+    box-shadow:  0 -1px 0 0 #1c1e1f inset, 0 -2px 0 0 #1c1e1f inset ;
+}
+
+.cont-inicio{
+    text-align: center;
+    min-height:85vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-i input{
+    font-size: 2.2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 1rem;
+    text-align: center;
+    width: 600px;
+}
+
+.cont-i button{
+    background-color: #f51f3b;
+    padding: 0.3rem 0.9rem 0 0.9rem;
+    font-size: 1.8rem;
+    color: white;
+    border-radius: 0.5rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+}
+
+.information{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/b1.png);
+    min-height: 103vh;
+    border-bottom: 20px solid #1c1e1f;
+    border-top: 10px solid #1c1e1f;
+    padding: 7rem 10rem;
+    display: grid;
+    grid-template-columns: 32rem auto;
+}
+
+.information .img{
+    background-color: white;
+    border: 10px solid #1c1e1f;
+    margin: 3rem;
+    height: 420px;
+    width: 420px;
+}
+
+.information .img img{
+    height: 400px;
+    width: 400px;
+    transform: rotate(-7deg);
+    border-radius: 5px;
+}
+
+.information .info{
+    display: flex;
+    align-items: center;
+}
+
+.info h1{
+    color: white;
+    font-size: 5.3rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.info p{
+    font-size: 1.1rem;
+}
+
+.comics{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/b2.jpg);
+    /*background-color: rgb(255, 205, 41);*/
+    min-height: 100vh;
+    padding-top: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    border-bottom: 20px solid #1c1e1f;
+}
+
+.comics h1{
+    color: white;
+    font-size: 7rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 7px;
+}
+
+.comics .cont-comics{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+}
+
+.comics .cont-comics .cont-comic .cont-img img{
+    width: 100%;
+    height: auto;
+}
+
+.comics .cont-comics .cont-comic .cont-img{
+    background-color: #f51f3b;
+}
+
+.comics .cont-comics .cont-comic .cont-text{
+    background-color: #1c1e1f;
+}
+
+.comics .cont-comics .cont-comic .cont-text h3{
+    color: white;
+    font-size: 1.5rem;
+    padding: 2px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    height: 65px;
+}
+
+.comics .cont-comics .cont-comic .cont-text2{
+    background-color: #f51f3b;
+    color: white;
+    font-size: 1.2rem;
+    padding-bottom: 2px;
+}
+
+.comics .cont-comics .cont-comic .cont-text2 a{
+    color: white;
+}
+
+.events{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/b4.jpg);
+    min-height: 100vh;
+    padding-top: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    border-bottom: 20px solid #1c1e1f;
+}
+
+.events h1{
+    color: white;
+    font-size: 7rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 7px;
+}
+
+.cont-events{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.cont-event{
+    display: grid;
+    grid-template-columns: 280px auto;
+    background-color: #1c1e1f;
+    color: white;
+    height: 280px;
+}
+
+.cont-event img{
+    height: 280px;
+    width: auto;
+}
+
+.text-event{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0.5rem;
+    max-height: 280px;
+    overflow-y: scroll;
+}
+
+.text-event::-webkit-scrollbar {
+    width: .5rem;
+}
+
+.text-event::-webkit-scrollbar-track {
+    background: #1c1e1f;
+}
+
+.text-event::-webkit-scrollbar-thumb {
+    background: #f51f3b;
+    border: .1rem solid #1c1e1f;
+    border-radius: 5rem;
+}
+
+.text-event h3{
+    color: #f51f3b;
+    font-size: 1.5rem;
+    margin: 0.4rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+.text-event a{
+    background-color: #f51f3b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin: 0.4rem;
+}
+
+.series{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/b3.jpg);
+    min-height: 100vh;
+    padding-top: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    border-bottom: 20px solid #1c1e1f;
+}
+
+.series h1{
+    color: white;
+    font-size: 7rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 7px;
+}
+
+.series .cont-series{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.series .cont-series .cont-serie{
+    background-color: #1c1e1f;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.series .cont-series .cont-serie .cont-img img{
+    width: auto;
+    height: 280px;
+    margin-bottom: 1rem;
+}
+
+.series .cont-series .cont-serie .cont-h3{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.series .cont-series .cont-serie .cont-h3 h3{
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+.series .cont-series .cont-serie .cont-text{
+    color: white;
+    font-size: 1.1rem;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.series .cont-series .cont-serie .cont-text a{
+    background-color: #f51f3b;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+}
+
+.comic-information{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/comic-fondo.png);
+    min-height: 100vh;
+    border-bottom: 10px solid #3b3453;
+    border-top: 10px solid #3b3453;
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: 32rem auto;
+}
+
+.comic-information .comic-img{
+    margin: 1rem;
+    height: 635;
+    width: 420px;
+}
+
+.comic-information .comic-img img{
+    height: 615px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.comic-information .comic-info{
+    display: flex;
+    align-items: center;
+}
+
+.comic-information .comic-info .info-content{
+    backdrop-filter: blur(14px);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.comic-info h1{
+    color: #1c1e1f;
+    font-size: 4.3rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    
+}
+
+.comic-info h2, .comic-info h3{
+    color: #1c1e1f;
+}
+
+
+.title-creators h2{
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    color: #1c1e1f;
+}
+
+.comic-info p{
+    font-size: 1.1rem;
+}
+
+.comic-creators{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.comic-creators div{
+    background-color: #1c1e1f;
+    padding: 0.7rem;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.comic-creators div h2{
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.comic-creators div h3{
+    color: white;
+    padding: 0.3rem;
+    background-color: #f51f3b;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+}
